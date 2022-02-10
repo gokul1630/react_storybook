@@ -3,9 +3,9 @@ interface IStackProps {
 	children: ReactNode
 	flexGap: number
 	flexDirection: "column" | "row"
-	flexWrap: "wrap" | "nowrap",
+	flexWrap: "wrap" | "nowrap"
 	childrenCount?: number
-	backgroundColor?:string
+	backgroundColor?: string
 }
 const Stack = ({ children, flexGap, flexDirection, flexWrap }: IStackProps) => {
 	return (

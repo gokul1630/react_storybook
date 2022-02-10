@@ -1,5 +1,5 @@
 import { ComponentMeta, ComponentStory } from "@storybook/react"
-import Stack from "./Stack"
+import Stack from "../Stack"
 
 export default {
 	title: "Components/Stack",
@@ -51,10 +51,10 @@ Vertical.args = {
 export const Wrap = StackTemplate.bind({})
 Wrap.args = {
 	flexWrap: "wrap",
-	childrenCount:30
+	childrenCount: 30,
 }
 export const NoWrap = StackTemplate.bind({})
 NoWrap.args = {
 	flexWrap: "nowrap",
-	childrenCount:30
+	childrenCount: 30,
 }

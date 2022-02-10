@@ -1,5 +1,5 @@
 import { ComponentMeta, ComponentStory } from "@storybook/react"
-import Button from "./Button"
+import Button from "../Button"
 export default {
 	title: "Components/Button",
 	component: Button,
@@ -9,8 +9,8 @@ export default {
 		},
 	},
 	args: {
-    borderRadius: 10,
-    color:'white'
+		borderRadius: 10,
+		color: "white",
 	},
 } as ComponentMeta<typeof Button>
 
@@ -35,6 +35,6 @@ Medium.args = {
 Large.args = {
 	label: "Large Button",
 	size: "lg",
-  backgroundColor: "yellow",
-  color:'black'
+	backgroundColor: "yellow",
+	color: "black",
 }
