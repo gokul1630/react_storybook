@@ -1,7 +1,7 @@
-import { ComponentMeta, ComponentStory } from "@storybook/react"
+import { Meta, Story } from "@storybook/react"
 import Stack from "../Stack"
 
-export default {
+const meta:Meta= {
 	title: "Components/Stack",
 	component: Stack,
 	argTypes: {
@@ -16,9 +16,10 @@ export default {
 			defaultValue: 1,
 		},
 	},
-} as ComponentMeta<typeof Stack>
+}
+export default meta
 
-const StackTemplate: ComponentStory<typeof Stack> = ({
+const StackTemplate: Story<any> = ({
 	backgroundColor,
 	childrenCount,
 	...args

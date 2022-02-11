@@ -1,6 +1,6 @@
-import { ComponentMeta, ComponentStory } from "@storybook/react"
+import {  Meta, Story } from "@storybook/react"
 import Button from "../Button"
-export default {
+const meta: Meta= {
 	title: "Components/Button",
 	component: Button,
 	argTypes: {
@@ -12,9 +12,10 @@ export default {
 		borderRadius: 10,
 		color: "white",
 	},
-} as ComponentMeta<typeof Button>
+}
+export default meta
 
-const ButtonTemplate: ComponentStory<typeof Button> = (args) => (
+const ButtonTemplate: Story<any> = (args) => (
 	<Button {...args} />
 )
 
