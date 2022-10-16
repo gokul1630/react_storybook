@@ -1,10 +1,16 @@
 import React from "react"
 interface IButttonProps {
+	/** label */
 	label: string
+	/** size */
 	size: "sm" | "md" | "lg"
+	/** background color */
 	backgroundColor: string
+	/** border radius */
 	borderRadius: number
+	/** button handler */
 	handler: (event: React.MouseEvent<HTMLElement, MouseEvent>) => void
+	/** color */
 	color: string
 }
 const Button = ({
